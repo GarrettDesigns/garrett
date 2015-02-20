@@ -1,0 +1,49 @@
+
+/*==========================================================
+=            Main color pallettes and variables            =
+==========================================================*/
+
+// define main colors and palletes in this file
+
+// Define base colors
+
+$white: #ffffff;
+$black: #000000;
+
+// define main site palette
+
+$powder-blue: #84A9D9;
+$sky-blue: #ACD1F2;
+$autumn-gourd: #F29A2E;
+$fallen-leaves: #8C4318;
+$pumpkin: #BF591F;
+$darkred: darkred;
+$business-blue: midnightblue;
+
+// Define color sets
+$buttons: (
+  primary: $powder-blue,
+  secondary: $sky-blue,
+  cancel: $darkred,
+  info: $autumn-gourd
+  );
+
+$palettes: (
+  grayscale: (
+    xx-light: lighten(#000000, 90%),
+    x-light: lighten(#000000, 80%),
+    light: lighten(#000000, 70%),
+    lt-base: lighten(#000000, 60%),
+    base: lighten(#000000, 50%),
+    dk-base: lighten(#000000, 40%),
+    dark: lighten(#000000, 30%),
+    x-dark: lighten(#000000, 20%),
+    xx-dark: lighten(#000000, 10%)
+    ),
+  main: (
+    callout: $autumn-gourd,
+    link-color: $pumpkin,
+    nav-link-color: $powder-blue,
+    cancel: $darkred
+    )
+  );

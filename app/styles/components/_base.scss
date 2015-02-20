@@ -1,0 +1,19 @@
+
+/*================================================
+=            Base application styles,            =
+================================================*/
+
+//  This file should only contain element selectors
+
+body {
+  font-family: $primary-font-family;
+  background: palette(grayscale, light);
+}
+
+a {
+  @include link-defaults($color: palette(main, link-color), $font-family: $alt-font-family);
+}
+
+[class*="button"] {
+  text-transform: capitalize;
+}

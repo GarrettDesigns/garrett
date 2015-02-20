@@ -1,0 +1,34 @@
+@import 'colors';
+
+/*==============================================
+=            Application variables             =
+==============================================*/
+
+// Define the responsive grid settings
+
+$susy: (
+  columns: 12,
+  gutter: 1/4,
+  container: 1200px,
+  global-box-sizing: border-box,
+  use-custom: (rem: true)
+);
+
+// makes border-box properties
+
+@include border-box-sizing;
+
+// Defines the breakpoints for responsive design
+
+$small-tablet: max-width 700px;
+$tablet: 700px;
+
+$app-background: $white;
+
+// Font Families
+
+$headline-font-family: 'jubilat', Georgia, serif;
+$primary-font-family: 'pt-sans', 'Helvetica', Verdana, sans-serif;
+$alt-font-family: 'pt-sans-caption', 'Helvetica', Verdana, sans-serif;
+
+

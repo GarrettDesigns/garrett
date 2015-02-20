@@ -1,0 +1,135 @@
+
+/*=========================================
+=            Main layout rules            =
+=========================================*/
+
+//////////////////////////////////////////////////////////
+
+// Define styles for grid layout, this is only to define
+// layout rules, no other styles should be implemented here.
+
+///////////////////////////////////////////////////////////
+
+
+// Main site component layout rules
+
+.container {
+  @include container;
+}
+
+.main-header {
+  @include span(2 of 12);
+}
+
+.main-footer {
+  @include span(10 of 12 last);
+}
+
+.app-body {
+ @include span(10 last);
+}
+
+.app-decisions {
+  @include span(10 of 10);
+}
+
+.app-header {
+  float: left;
+  width: 100%;
+}
+
+.app-info {
+  // app info layout rules go here.
+}
+
+// Module layout rules
+
+.rounded-nav {
+  @include span(3);
+}
+
+.simple-nav {
+  @include span(12);
+}
+
+.product-gallery {
+  @include span(12);
+  &-header {
+    @include span(12);
+  }
+}
+
+.process-module {
+  @include span(12);
+}
+
+.product-module {
+  @include span(12);
+  &-info {
+    @include span(4);
+    &:last-child {
+      @include last;
+    }
+  }
+  &-title {
+    @include span(4);
+  }
+  &-image, &-stats, &-controls {
+    @include span(3);
+  }
+  &-outcomes {
+    @include span(3 last);
+  }
+  &-head {
+    @include span(12);
+  }
+}
+
+.human-resources-module, .plant-improvements-module, {
+  @include span(4 of 12);
+}
+
+.corporate-mission-module {
+  @include span(4 of 12 last);
+}
+
+.marketing-module {
+  @include span(12);
+}
+
+.marketing-module-decisions {
+  @include span(6 of 12 last);
+}
+
+.marketing-module-info {
+  @include span(6 of 12);
+}
+
+.staff-warning {
+  @include span(12);
+}
+
+.sales-team, .marketing-team {
+  @include span(3 of 6);
+}
+
+.marketing-team {
+  @include last;
+}
+
+.add-product-form {
+  @include span(4 of 8);
+}
+
+.cash-flow-table, .income-statement-table {
+  width: 100%;
+  display: block;
+}
+
+.info, .decisions {
+  @include span(6 of 12);
+}
+
+.decisions {
+  @include last;
+}

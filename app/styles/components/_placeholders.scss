@@ -1,0 +1,72 @@
+
+/*=====================================================================
+=            Placeholder styles to support BEM methodology            =
+=====================================================================*/
+
+///////////////////////////////////////////////////////////////
+
+// Write all placeholder styles here to generate modular styles
+// for element defaults and modifiers
+
+////////////////////////////////////////////////////////////////
+
+
+// Blocks
+
+%nav-defaults {
+
+}
+
+%rounded-nav-defaults {
+  background: palette(grayscale, x-light);
+  border-radius: 5px;
+}
+
+%widget-defaults {
+  @include shadow-box;
+  padding: 10px;
+}
+
+// Elements
+
+%nav-item {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+%product-select {
+  display: block;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+// Modifiers
+
+%nav-item-link {
+  color: palette(grayscale, dark);
+  font-family: $alt-font-family;
+  padding: 10px;
+  &:hover {
+    color: palette(grayscale, light);
+    background: palette(grayscale, dark);
+    border-radius: 5px;
+  }
+}
+
+%nav-item-active {
+  background: palette(grayscale, dark);
+  color: palette(grayscale, x-light);
+}
+
+// Placeholder Utlity classes
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+   clear: both;
+  }
+}

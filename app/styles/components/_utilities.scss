@@ -1,0 +1,74 @@
+/*====================================================================
+=            Utility file containing functions and mixins            =
+====================================================================*/
+
+///////////////////////////////////////////////////////
+
+// This file contains functions and mixins to generate
+// dynamic styles and elements
+
+///////////////////////////////////////////////////////
+
+
+// Functions
+
+@function palette($palette, $color) {
+  @return map-get(map-get($palettes, $palette), $color);
+}
+
+// Mixins
+
+@mixin button-base($radius: 10px, $padding: 10px, $color: $white, $bg: $autumn-gourd, $border: none) {
+  border-radius: $radius;
+  padding: $padding;
+  color: $color;
+  background: $bg;
+  border: $border;
+  outline: none;
+  cursor: pointer;
+  transition: all .5s;
+  &:hover {
+    background: darken($bg, 10%);
+  }
+}
+
+@mixin custom-buttons($map) {
+  @each $button, $button-color in $map {
+    .#{$button}-button {
+      @if $button == primary {
+        @include button-base($color: $fallen-leaves);
+      }
+      @if $button == secondary {
+        @include button-base($bg: $white, $color: darken($button-color, 30%));
+      }
+      @if $button == cancel {
+        @include button-base($bg: $white, $color: lighten($button-color, 60%));
+      }
+      @if $button == info {
+        @include button-base($bg: $white, $color: $fallen-leaves);
+      }
+    }
+  }
+}
+
+@include custom-buttons($buttons);
+
+//builds ui component box containers for content
+
+@mixin shadow-box($width: null, $color: null, $padding: 20px, $background-color: null, $shadow-color: transparentize(palette(grayscale, x-dark), 0.5)) {
+  width: $width;
+  color: $color;
+  padding: $padding;
+  background: $background-color;
+  box-shadow: 0px 1px 1px 0px $shadow-color;
+}
+
+@mixin link-defaults($color: null, $font-weight: null, $padding: null, $display: inline-block, $font-family: $primary-font-family) {
+  color: $color;
+  font-weight: $font-weight;
+  padding: $padding;
+  display: $display;
+  text-decoration: none;
+  font-family: $font-family;
+}
+
