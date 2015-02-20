@@ -5,9 +5,11 @@
 
 //  This file should only contain element selectors
 
+@include border-box-sizing;
+
 body {
   font-family: $primary-font-family;
-  background: palette(grayscale, light);
+  background: $white;
 }
 
 a {

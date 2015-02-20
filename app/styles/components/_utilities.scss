@@ -18,7 +18,7 @@
 
 // Mixins
 
-@mixin button-base($radius: 10px, $padding: 10px, $color: $white, $bg: $autumn-gourd, $border: none) {
+@mixin button-base($radius: 10px, $padding: 10px, $color: $white, $bg: $olive, $border: none) {
   border-radius: $radius;
   padding: $padding;
   color: $color;
@@ -36,7 +36,7 @@
   @each $button, $button-color in $map {
     .#{$button}-button {
       @if $button == primary {
-        @include button-base($color: $fallen-leaves);
+        @include button-base($color: $olive);
       }
       @if $button == secondary {
         @include button-base($bg: $white, $color: darken($button-color, 30%));
@@ -45,7 +45,7 @@
         @include button-base($bg: $white, $color: lighten($button-color, 60%));
       }
       @if $button == info {
-        @include button-base($bg: $white, $color: $fallen-leaves);
+        @include button-base($bg: $white, $color: $mustard);
       }
     }
   }
@@ -55,7 +55,7 @@
 
 //builds ui component box containers for content
 
-@mixin shadow-box($width: null, $color: null, $padding: 20px, $background-color: null, $shadow-color: transparentize(palette(grayscale, x-dark), 0.5)) {
+@mixin shadow-box($width: null, $color: null, $padding: 20px, $background-color: $white, $shadow-color: transparentize(palette(grayscale, x-dark), 0.5)) {
   width: $width;
   color: $color;
   padding: $padding;

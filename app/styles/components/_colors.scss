@@ -12,20 +12,18 @@ $black: #000000;
 
 // define main site palette
 
-$powder-blue: #84A9D9;
-$sky-blue: #ACD1F2;
-$autumn-gourd: #F29A2E;
-$fallen-leaves: #8C4318;
-$pumpkin: #BF591F;
-$darkred: darkred;
-$business-blue: midnightblue;
+$mustard: #d68a10;
+$olive: #433D2A;
+$buttercream: #fffae2;
+$bloodstone: #521309;
+$firehouse: #cc2e22;
 
 // Define color sets
 $buttons: (
-  primary: $powder-blue,
-  secondary: $sky-blue,
-  cancel: $darkred,
-  info: $autumn-gourd
+  primary: $mustard,
+  secondary: $olive,
+  cancel: $bloodstone,
+  info: $firehouse
   );
 
 $palettes: (
@@ -41,9 +39,9 @@ $palettes: (
     xx-dark: lighten(#000000, 10%)
     ),
   main: (
-    callout: $autumn-gourd,
-    link-color: $pumpkin,
-    nav-link-color: $powder-blue,
-    cancel: $darkred
+    callout: $firehouse,
+    link-color: $firehouse,
+    nav-link-color: $olive,
+    cancel: $bloodstone
     )
   );
