@@ -14,8 +14,10 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/application.css">
     <!-- endbuild -->
+    <script src="scripts/iconic.min.js"></script>
     <script src="//use.typekit.net/jev1abe.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <base href="/">
   </head>
   <body ng-app="garrettApp">
     <!--[if lt IE 7]>
@@ -23,15 +25,18 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <nav>
-      <ul>
-        <li class="active"><a href="#/">Home</a></li>
-        <li><a ng-href="#/about">About</a></li>
-        <li><a ng-href="#/">Contact</a></li>
-      </ul>
-    </nav>
 
-    <div class="container">
+    <header class="header-container">
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-list-item" class="active"><a href="/"><img class="iconic iconic-fluid" data-src="images/smart/home.svg"> Home</a></li>
+          <li class="nav-list-item"><a href="/about">About</a></li>
+          <li class="nav-list-item"><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-content-container">
       <div ng-view=""></div>
     </div>
 
@@ -64,8 +69,11 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/directives/city.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>

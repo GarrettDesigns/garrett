@@ -51,8 +51,6 @@
   }
 }
 
-@include custom-buttons($buttons);
-
 //builds ui component box containers for content
 
 @mixin shadow-box($width: null, $color: null, $padding: 20px, $background-color: $white, $shadow-color: transparentize(palette(grayscale, x-dark), 0.5)) {

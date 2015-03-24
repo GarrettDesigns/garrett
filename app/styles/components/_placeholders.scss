@@ -13,6 +13,10 @@
 
 // Blocks
 
+%container-defaults {
+  @include container();
+}
+
 %nav-defaults {
 
 }

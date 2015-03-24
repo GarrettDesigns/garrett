@@ -3,20 +3,23 @@
 =            Main style sheet for application            =
 ========================================================*/
 
-
-// No styles should be written in this file, this is for imports only
+/*==========  No styles should be written in this file, ==========*/
+/*==========  this is for imports only  ==========================*/
 
 
 // bower:scss
+@import "meyer-reset/stylesheets/_meyer-reset.scss";
 @import "sassy-maps/sass/_sassy-maps.scss";
 @import "breakpoint-sass/stylesheets/_breakpoint.scss";
 @import "susy/sass/_susy.scss";
 // endbower
 
 
-// import partial sass component files
+/*==========  import partial sass component files  ==========*/
 
-@import 'components/config',
+
+@import 'components/iconic-glyphs',
+				'components/config',
         'components/layout',
         'components/colors',
         'components/utilities',

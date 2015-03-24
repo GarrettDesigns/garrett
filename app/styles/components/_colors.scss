@@ -19,29 +19,30 @@ $bloodstone: #521309;
 $firehouse: #cc2e22;
 
 // Define color sets
-$buttons: (
-  primary: $mustard,
-  secondary: $olive,
-  cancel: $bloodstone,
-  info: $firehouse
-  );
+
 
 $palettes: (
   grayscale: (
-    xx-light: lighten(#000000, 90%),
-    x-light: lighten(#000000, 80%),
-    light: lighten(#000000, 70%),
-    lt-base: lighten(#000000, 60%),
-    base: lighten(#000000, 50%),
-    dk-base: lighten(#000000, 40%),
-    dark: lighten(#000000, 30%),
-    x-dark: lighten(#000000, 20%),
-    xx-dark: lighten(#000000, 10%)
+    xx-light: lighten($black, 90%),
+    x-light: lighten($black, 80%),
+    light: lighten($black, 70%),
+    lt-base: lighten($black, 60%),
+    base: lighten($black, 50%),
+    dk-base: lighten($black, 40%),
+    dark: lighten($black, 30%),
+    x-dark: lighten($black, 20%),
+    xx-dark: lighten($black, 10%)
     ),
   main: (
     callout: $firehouse,
     link-color: $firehouse,
     nav-link-color: $olive,
     cancel: $bloodstone
+    ),
+  buttons: (
+    primary: $mustard,
+    secondary: $olive,
+    cancel: $bloodstone,
+    info: $firehouse
     )
   );

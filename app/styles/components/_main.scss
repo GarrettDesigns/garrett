@@ -1,0 +1,41 @@
+
+// ========
+// Include mixin to generate classes for custom buttons
+// ========
+
+@include custom-buttons(map-get($palettes, buttons));
+
+// ========
+// Main navigation styling
+// ========
+
+.nav {
+	&-list {
+		&-item {
+			display: inline-block;
+			width: 60px;
+			a {
+				height: 20px;
+			}
+		}
+	}
+}
+
+.weather-info {
+	background: steelblue;
+	color: lighten(steelblue, 40%);
+	border-radius: 5px;
+	border: 1px solid darken(steelblue, 40%);
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 50%;
+	&-location {
+		font-size: 1.5rem;
+	}
+}
+.current-weather {
+	&-title {
+		font-weight: 700;
+		font-size: 1rem;
+	}
+}

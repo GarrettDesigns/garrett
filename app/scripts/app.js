@@ -8,26 +8,31 @@
  *
  * Main module of the application.
  */
+
 angular
   .module('garrettApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'tmp-components'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: '/views/main.html',
+        controller: 'MainController'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        templateUrl: '/views/about.html',
+        controller: 'AboutController'
+      })
+      .when('/contact', {
+        templateUrl: '/views/contact.html',
+        controller: 'ContactController'
       })
       .otherwise({
         redirectTo: '/'
       });
+
+      // Clean up URL's to get rid of # and keep them readable
+
+      $locationProvider.html5Mode(true);
   });
