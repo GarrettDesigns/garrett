@@ -24,6 +24,9 @@ img.iconic {
 
 .iconic * {
 	// Main color goes here
+	width: 20px;
+	height: 20px;
+	fill: darken($pale-orange, 40%);
 }
 
 .iconic .iconic-property-accent {

@@ -18,7 +18,7 @@
 
 // Mixins
 
-@mixin button-base($radius: 10px, $padding: 10px, $color: $white, $bg: $olive, $border: none) {
+@mixin button-base($radius: 10px, $padding: 10px, $color: $white, $bg: null, $border: none) {
   border-radius: $radius;
   padding: $padding;
   color: $color;
@@ -28,7 +28,7 @@
   cursor: pointer;
   transition: all .5s;
   &:hover {
-    background: darken($bg, 10%);
+    // background: darken($bg, 10%);
   }
 }
 
@@ -36,16 +36,16 @@
   @each $button, $button-color in $map {
     .#{$button}-button {
       @if $button == primary {
-        @include button-base($color: $olive);
+        @include button-base($color: pallete(buttons, primary));
       }
       @if $button == secondary {
-        @include button-base($bg: $white, $color: darken($button-color, 30%));
+        @include button-base($bg: $white);
       }
       @if $button == cancel {
-        @include button-base($bg: $white, $color: lighten($button-color, 60%));
+        @include button-base($bg: $white);
       }
       @if $button == info {
-        @include button-base($bg: $white, $color: $mustard);
+        @include button-base($bg: $white);
       }
     }
   }

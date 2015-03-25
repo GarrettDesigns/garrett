@@ -10,13 +10,20 @@
 $white: #ffffff;
 $black: #000000;
 
-// define main site palette
+/// ========
+// Define colors for making color maps
+// ========
 
-$mustard: #d68a10;
-$olive: #433D2A;
-$buttercream: #fffae2;
-$bloodstone: #521309;
-$firehouse: #cc2e22;
+$white: #ffffff;
+$black: #000000;
+$mint-green: #DEF4E5;
+$lilac: #DCE0F2;
+$sea-green: #DCF0EF;
+$pale-orange: #FFE3DB;
+$latte-foam: #F8EDD0;
+$light-gray: #EAEBEC;
+$cucumber: #C5E2CE;
+$powder-blue: #D6EEF5;
 
 // Define color sets
 
@@ -34,15 +41,15 @@ $palettes: (
     xx-dark: lighten($black, 10%)
     ),
   main: (
-    callout: $firehouse,
-    link-color: $firehouse,
-    nav-link-color: $olive,
-    cancel: $bloodstone
+    callout: slategray,
+    link-color: darken($pale-orange, 40%),
+    nav-link-color: $powder-blue,
+    cancel: $pale-orange
     ),
   buttons: (
-    primary: $mustard,
-    secondary: $olive,
-    cancel: $bloodstone,
-    info: $firehouse
+    primary: $lilac,
+    secondary: $sea-green,
+    cancel: $cucumber,
+    info: $pale-orange
     )
   );

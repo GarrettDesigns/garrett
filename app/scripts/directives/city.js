@@ -11,7 +11,8 @@ angular.module('tmp-components',[])
 				temperature: '@',
 				sunrise: '@',
 				sunset: '@',
-				alerts: '@'
+				alerts: '@',
+				icon: '@'
 			},
 			replace: true
 		};
