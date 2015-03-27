@@ -11,6 +11,9 @@
 
 .nav {
 	&-list {
+		padding: 10px;
+		border-radius: 5px;
+		background: transparentize($powder-blue, 0.8);
 		&-item {
 			display: inline-block;
 			width: 60px;
@@ -21,34 +24,3 @@
 	}
 }
 
-.weather-info {
-	background: palette(main, cancel);
-	color: darken(palette(main, cancel), 30%);
-	border-radius: 5px;
-	border: 1px solid darken(palette(main, cancel), 40%);
-	padding: 20px;
-	margin-bottom: 20px;
-	width: 50%;
-	&-icon {
-		&.clear-day {
-			background: url('../../images/smart/sun.svg');
-		}
-		&.cloudy {
-			.iconic & {
-				fill: $pale-orange;
-			}
-		}
-		&.partly-cloudy-day {
-			background: url('../../images/smart/cloudy.svg');
-		}
-	}
-	&-location {
-		font-size: 1.5rem;
-	}
-}
-.current-weather {
-	&-title {
-		font-weight: 700;
-		font-size: 1rem;
-	}
-}

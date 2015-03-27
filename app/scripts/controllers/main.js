@@ -8,17 +8,22 @@
  * Controller of the garrettApp
  */
 angular.module('garrettApp')
-  .controller('MainController', function ($scope, $http) {
-  	$http.jsonp('https://api.forecast.io/forecast/d4286e2ccfad887e26d8ab3bcd5db3bd/41.8500300,-87.6500500?callback=JSON_CALLBACK')
-  	.success(function(data) {
-  		$scope.chicago = data;
-  	});
-	$http.jsonp('https://api.forecast.io/forecast/d4286e2ccfad887e26d8ab3bcd5db3bd/33.4483800,-112.0740400?callback=JSON_CALLBACK')
-  	.success(function(data) {
-  		$scope.phoenix = data;
-  	});
-  	$http.jsonp('https://api.forecast.io/forecast/d4286e2ccfad887e26d8ab3bcd5db3bd/42.4031,-86.2736?callback=JSON_CALLBACK')
-  	.success(function(data) {
-  		$scope.southHaven = data;
-  	});
+  .controller('MainController', function ($scope) {
+  	$scope.portfolio = [{
+  		item1: {
+  			image: 'http://dummyimage.com/400x300/4d494d/686a82.gif&text=placeholder+image'
+  		},
+  		item2: {
+  			image: 'http://dummyimage.com/400x300/4d494d/686a82.gif&text=placeholder+image'
+  		},
+  		item3: {
+  			image: 'http://dummyimage.com/400x300/4d494d/686a82.gif&text=placeholder+image'
+  		},
+  		item4: {
+  			image: 'http://dummyimage.com/400x300/4d494d/686a82.gif&text=placeholder+image'
+  		},
+  		item5: {
+  			image: 'http://dummyimage.com/400x300/4d494d/686a82.gif&text=placeholder+image'
+  		}
+  	}];
   });
