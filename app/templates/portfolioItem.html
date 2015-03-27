@@ -1,5 +1,5 @@
 
-<article class="portfolio">
-	<img src="{{portItem.item1.image}}">
-	<p>hello</p>
+<article class="port-item"  ng-repeat="portItem in portfolio">
+	<img src="{{portItem.image}}">
+	<p>{{portItem.description}}</p>
 </article>

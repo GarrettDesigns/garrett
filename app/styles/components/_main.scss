@@ -9,17 +9,17 @@
 // Main navigation styling
 // ========
 
-.nav {
-	&-list {
-		padding: 10px;
-		border-radius: 5px;
-		background: transparentize($powder-blue, 0.8);
-		&-item {
-			display: inline-block;
-			width: 60px;
-			a {
-				height: 20px;
-			}
+.main-nav {
+	background: transparentize($powder-blue, 0.8);
+}
+
+.nav-list {
+	padding: 10px;
+	&-item {
+		display: inline-block;
+		width: 60px;
+		a {
+			height: 20px;
 		}
 	}
 }
