@@ -21,10 +21,6 @@
   @extend %container-defaults;
 }
 
-.branding {
-  @extend %container-defaults;
-}
-
 .port-item {
   @include breakpoint(min-width $desktop) {
     @include gallery(4);

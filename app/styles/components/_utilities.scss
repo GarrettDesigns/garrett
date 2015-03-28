@@ -18,6 +18,14 @@
 
 // Mixins
 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 @mixin button-base($radius: 10px, $padding: 10px, $color: $white, $bg: null, $border: none) {
   border-radius: $radius;
   padding: $padding;

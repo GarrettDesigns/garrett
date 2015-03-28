@@ -13,13 +13,19 @@ img {
 
 body {
   font-family: $alt-font-family;
-  background: $app-background;
+  background: url('../images/p6.png');
   line-height: 1.5;
 }
 
+header {
+  background: $powder-blue;
+  @include clearfix;
+}
+
 h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 	font-family: $primary-font-family;
+  color: $cucumber;
 }
 
 a {

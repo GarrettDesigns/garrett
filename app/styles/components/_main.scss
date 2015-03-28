@@ -9,12 +9,14 @@
 // Main navigation styling
 // ========
 
-.main-nav {
-	background: transparentize($powder-blue, 0.8);
+.main-content-container {
+  background: $white;
+  padding: 20px;
 }
 
 .nav-list {
 	padding: 10px;
+  float: right;
 	&-item {
 		display: inline-block;
 		width: 60px;
@@ -25,7 +27,10 @@
 }
 
 .branding {
-  text-align: center;
+  float: left;
+  &-elements {
+    display: inline-block;
+  }
 }
 
 .port-item {
