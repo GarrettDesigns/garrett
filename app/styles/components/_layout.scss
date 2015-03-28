@@ -13,6 +13,14 @@
 
 // Main site component layout rules
 
+.branding {
+  @include span(6);
+}
+
+.main-nav {
+  @include span(6 last);
+}
+
 .nav-list {
   @extend %container-defaults;
 }

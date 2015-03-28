@@ -11,28 +11,40 @@ angular.module('garrettApp')
   .controller('MainController', function ($scope) {
   	$scope.portfolio = [
   		{
-  			image: 'images/redhawkcasino_03.jpg',
+  			image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
   			description: 'This is the first item'
   		},
   		{
-  			image: 'images/redhawkcasino_03.jpg',
+  			image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
   			description: 'This is the second item'
   		},
   		{
-  			image: 'images/redhawkcasino_03.jpg',
+  			image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
   			description: 'This is the third item'
   		},
   		{
-  			image: 'images/redhawkcasino_03.jpg',
+  			image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
   			description: 'This is the fourth item'
   		},
       {
-        image: 'images/redhawkcasino_03.jpg',
+        image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
         description: 'This is the fifth item'
       },
   		{
-  			image: 'images/redhawkcasino_03.jpg',
+  			image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
   			description: 'This is the sixth item'
-  		}
+  		},
+      {
+        image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
+        description: 'This is the seventh item'
+      },
+      {
+        image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
+        description: 'This is the eighth item'
+      },
+      {
+        image: 'http://dummyimage.com/800x800/4d494d/686a82.gif&text=placeholder+image',
+        description: 'This is the ninth item'
+      }
   	];
   });
