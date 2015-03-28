@@ -21,3 +21,25 @@
   @extend %container-defaults;
 }
 
+.branding {
+  @extend %container-defaults;
+}
+
+.port-item {
+  @include breakpoint(min-width $desktop) {
+    @include gallery(4);
+    margin-bottom: gutter();
+  }
+  @include breakpoint($tablet $desktop) {
+    @include gallery(6);
+    margin-bottom: gutter();
+  }
+  @include breakpoint($small-tablet) {
+    @include full;
+    margin-bottom: gutter();
+  }
+}
+
+.footer-content {
+  @extend %container-defaults;
+}

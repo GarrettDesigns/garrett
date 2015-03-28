@@ -24,3 +24,15 @@
 	}
 }
 
+.branding {
+  text-align: center;
+}
+
+.port-item {
+  position: relative;
+  &-description {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
