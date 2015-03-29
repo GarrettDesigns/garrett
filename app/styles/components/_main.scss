@@ -16,20 +16,33 @@
   margin-top: 30px;
 }
 
+.port-overview {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto 70px;
+  font-size: 2rem;
+}
+
 .section-title {
   font-size: 5rem;
   color: #333;
   text-align: center;
   font-family: $headline-font-family;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .nav-list {
 	padding: 10px;
   text-align: right;
+  @include breakpoint($small-tablet) {
+    text-align: center;
+  }
 	&-item {
 		display: inline-block;
-		margin-right: 30px;
+		margin-left: 30px;
+    &:first-child {
+      margin: 0;
+    }
 		a {
 			height: 20px;
 		}
@@ -37,9 +50,27 @@
 }
 
 .branding {
+  @include breakpoint($small-tablet) {
+    text-align: center;
+  }
   &-elements {
     display: inline-block;
     font-weight: 300;
+    padding-top: 3px;
+    padding-left: 70px;
+    background: url('../../images/logo_gray.png') no-repeat;
+    transition: all 1s;
+    &:hover {
+      background: url('../../images/logo.png') no-repeat;
+    }
+    &.name {
+        margin: 15px 0 0;
+      }
+    @include breakpoint($small-tablet) {
+      &.name {
+        margin: 20px 0;
+      }
+    }
   }
 }
 
