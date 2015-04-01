@@ -28,7 +28,7 @@
   color: #333;
   text-align: center;
   font-family: $headline-font-family;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .nav-list {
@@ -76,11 +76,16 @@
   }
 }
 
+.port-image {
+	margin: 30px auto;
+	display: block;
+}
+
 .port-item {
   position: relative;
   border: 1px solid palette(grayscale, x-light);
   &-hover {
-  	background: transparentize(palette(grayscale, x-dark), 0.3);
+  	background: transparentize(palette(grayscale, x-dark), 0.1);
   	border: 1px solid darken(palette(main, infoHover), 10%);
   	color: $white;
   	position: absolute;

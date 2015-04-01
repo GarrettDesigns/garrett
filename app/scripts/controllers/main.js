@@ -8,7 +8,7 @@
  * Controller of the garrettApp
  */
 angular.module('garrettApp')
-  .controller('MainController', function ($scope) {
+  .controller('MainController', function ($scope, $http) {
   	$scope.portfolio = [
   		{
   			title: 'Project Title',
@@ -65,4 +65,8 @@ angular.module('garrettApp')
         show: false
       }
   	];
+
+    $http.get('https://api.twitter.com/1.1/statuses/user_timeline.json?user_id=garrettdesigns&screen_name=garrettdesigns').success(function(data) {
+      $scope.tweets = data;
+    });
   });

@@ -12,6 +12,7 @@
 angular
   .module('garrettApp', [
     'ngRoute',
+    'ngResource',
     'tmp-components'
   ])
   .config(function ($routeProvider, $locationProvider) {
