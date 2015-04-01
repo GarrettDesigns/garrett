@@ -41,13 +41,14 @@ $palettes: (
     xx-dark: lighten($black, 10%)
     ),
   main: (
+    infoHover: $pale-orange,
     callout: slategray,
     link-color: darken($pale-orange, 40%),
     nav-link-color: $powder-blue,
     cancel: $pale-orange
     ),
   buttons: (
-    primary: $lilac,
+    primary: $pale-orange,
     secondary: $sea-green,
     cancel: $cucumber,
     info: $pale-orange

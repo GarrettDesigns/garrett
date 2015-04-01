@@ -1,5 +1,9 @@
 
-<article class="port-item"  ng-repeat="portItem in portfolio">
-	<a href="#"><img ng-src="{{portItem.image}}">
-	<span class="port-item-description">{{portItem.description}}</span></a>
+<article class="port-item"  ng-repeat="portItem in portfolio" ng-mouseenter="portItem.show = !portItem.show" ng-mouseleave="portItem.show = !portItem.show" >
+	<div class="port-item-hover" ng-show="portItem.show">
+		<h4>{{portItem.title}}</h4>
+		<span class="port-item-description">{{portItem.description}}</span>
+		<button class="primary buttons">View {{portItem.title}}</button>
+	</div>
+	<a href="#"><img ng-src="{{portItem.image}}"></a>
 </article>

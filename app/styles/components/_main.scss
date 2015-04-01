@@ -39,7 +39,6 @@
   }
 	&-item {
 		display: inline-block;
-    padding: 30px 0;
     margin: 0;
     text-align: center;
     width: 20%;
@@ -50,7 +49,8 @@
       margin: 0;
     }
 		a {
-			height: 20px;
+			padding: 30px 0;
+			width: 100%;
 		}
 	}
 }
@@ -78,9 +78,17 @@
 
 .port-item {
   position: relative;
+  border: 1px solid palette(grayscale, x-light);
+  &-hover {
+  	background: transparentize(palette(grayscale, x-dark), 0.3);
+  	border: 1px solid darken(palette(main, infoHover), 10%);
+  	color: $white;
+  	position: absolute;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
   &-description {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+
   }
 }

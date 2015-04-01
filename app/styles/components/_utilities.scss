@@ -26,34 +26,52 @@
   }
 }
 
-@mixin button-base($radius: 10px, $padding: 10px, $color: $white, $bg: null, $border: none) {
-  border-radius: $radius;
-  padding: $padding;
-  color: $color;
-  background: $bg;
-  border: $border;
-  outline: none;
-  cursor: pointer;
-  transition: all .5s;
-  &:hover {
-    // background: darken($bg, 10%);
+@mixin comp-gen($palette) {
+  @each $name, $color in map-get($palettes, $palette) {
+    .#{$name}.#{$palette} {
+      background: $color;
+      color: darken($color, 40%);
+      @if $name == disabled {
+        cursor: not-allowed;
+        &:hover {
+          border: 1px solid $app-background;
+        }
+        &:active {
+          background: $color;
+          color: darken($color, 40%);
+        }
+      }
+      @if $palette == alerts {
+        border: 1px solid darken($color, 40%);
+      }
+      @content;
+    }
+  }
+}
+
+// ========
+// Custom Button Creation Mixin
+// -----
+// generates classes to be applied to any html element
+// ========
+
+@mixin button-base() {
+  @include comp-gen(buttons) {
+    @extend %button-defaults;
   }
 }
 
 @mixin custom-buttons($map) {
+  @include button-base();
   @each $button, $button-color in $map {
-    .#{$button}-button {
-      @if $button == primary {
-        @include button-base($color: pallete(buttons, primary));
+    .#{$button} {
+      &:hover {
+        border: 1px solid darken($button-color, 40%);
       }
-      @if $button == secondary {
-        @include button-base($bg: $white);
-      }
-      @if $button == cancel {
-        @include button-base($bg: $white);
-      }
-      @if $button == info {
-        @include button-base($bg: $white);
+      &:active {
+        background: darken($button-color, 30%);
+        color: $white;
+        transition: 0.1s;
       }
     }
   }
