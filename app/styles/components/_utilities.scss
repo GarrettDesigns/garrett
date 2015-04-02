@@ -31,6 +31,7 @@
     .#{$name}.#{$palette} {
       background: $color;
       color: darken($color, 40%);
+      border: 1px solid $color;
       @if $name == disabled {
         cursor: not-allowed;
         &:hover {

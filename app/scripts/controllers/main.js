@@ -66,7 +66,7 @@ angular.module('garrettApp')
       }
   	];
 
-    $http.get('https://api.twitter.com/1.1/statuses/user_timeline.json?user_id=garrettdesigns&screen_name=garrettdesigns').success(function(data) {
-      $scope.tweets = data;
-    });
+    // $http.get('https://api.twitter.com/1.1/statuses/user_timeline.json?user_id=garrettdesigns&screen_name=garrettdesigns').success(function(data) {
+    //   $scope.tweets = data;
+    // });
   });

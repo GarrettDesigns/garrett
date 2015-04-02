@@ -21,10 +21,10 @@
   @include breakpoint(min-width $desktop) {
     @include span(6);
   }
-  @include breakpoint($tablet) {
-   @include span(6);
+  @include breakpoint(min-width $tablet) {
+    @include span(6);
   }
-  @include breakpoint($small-tablet) {
+  @include breakpoint($mobile $small-tablet) {
     @include span(12);
   }
 }
@@ -33,10 +33,10 @@
   @include breakpoint(min-width $desktop) {
     @include span(6 last);
   }
-  @include breakpoint($tablet) {
-   @include span(6 last);
+  @include breakpoint(min-width $tablet) {
+    @include span(6 last);
   }
-  @include breakpoint($small-tablet) {
+  @include breakpoint($mobile $small-tablet) {
     @include span(12);
   }
 }
@@ -58,7 +58,7 @@
     @include gallery(6);
     margin-bottom: gutter();
   }
-  @include breakpoint($small-tablet) {
+  @include breakpoint($mobile $small-tablet) {
     @include full;
     margin-bottom: gutter();
   }
