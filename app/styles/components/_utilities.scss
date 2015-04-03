@@ -59,6 +59,7 @@
 @mixin button-base() {
   @include comp-gen(buttons) {
     @extend %button-defaults;
+    background: none;
   }
 }
 
