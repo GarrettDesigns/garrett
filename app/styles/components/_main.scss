@@ -21,12 +21,18 @@
 
 .port-overview {
   width: 80%;
+  max-width: 1015px;
   text-align: center;
-  margin: 0 auto 70px;
-  font-size: 2rem;
+  margin: 0 auto 100px;
+  font-size: 1.75rem;
   @include breakpoint(max-width $small-tablet) {
       display: none;
     }
+  &-link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .section-title {
@@ -110,7 +116,12 @@
 .port-item {
   position: relative;
   border: 1px solid palette(grayscale, x-light);
-  &-hover {
+  &:hover {
+    .port-item-detail {
+      opacity: 1;
+    }
+  }
+  &-detail {
   	background: transparentize(palette(grayscale, x-dark), 0.1);
   	border: 1px solid darken(palette(main, infoHover), 10%);
   	color: $white;
@@ -118,6 +129,8 @@
     padding: 20px;
     height: 100%;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   &-description {
 

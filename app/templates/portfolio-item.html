@@ -1,6 +1,6 @@
 
-<article class="port-item"  ng-repeat="portItem in portfolio" ng-mouseenter="portItem.show = !portItem.show" ng-mouseleave="portItem.show = !portItem.show" >
-	<div class="port-item-hover" ng-show="portItem.show">
+<article class="port-item"  ng-repeat="portItem in portfolio">
+	<div class="port-item-detail">
 		<h4>{{portItem.title}}</h4>
 		<span class="port-item-description">{{portItem.description}}</span>
 		<button class="primary buttons">View {{portItem.title}}</button>
