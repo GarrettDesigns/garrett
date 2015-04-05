@@ -30,7 +30,7 @@
   @each $name, $color in map-get($palettes, $palette) {
     .#{$name}.#{$palette} {
       background: $color;
-      color: darken($color, 40%);
+      color: $color;
       border: 1px solid $color;
       @if $name == disabled {
         cursor: not-allowed;
@@ -69,6 +69,7 @@
     .#{$button} {
       &:hover {
         border: 1px solid darken($button-color, 40%);
+        color: darken($button-color, 40%);
       }
       &:active {
         background: darken($button-color, 30%);
