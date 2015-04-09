@@ -1,5 +1,8 @@
 # garrett
 
+(https://codeship.com/projects/YOUR_PROJECT_UUID/status?branch=master)
+
+
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.11.1.
 
