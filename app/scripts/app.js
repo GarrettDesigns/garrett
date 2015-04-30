@@ -21,6 +21,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainController'
       })
+      .when('/:portName', {
+        templateUrl: 'views/port-detail.html',
+        controller: 'PortfolioController'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutController'
