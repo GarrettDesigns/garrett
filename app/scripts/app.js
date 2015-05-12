@@ -13,31 +13,32 @@ angular
   .module('garrettApp', [
     'ngRoute',
     'ngResource',
-    'tmp-components'
+    'tmp-components',
+    'ui.router'
   ])
-  .config(function ($routeProvider, $locationProvider) {
-    $routeProvider
-      .when('/', {
+  .config(function ($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+      .state('home', {
+        url: '/',
         templateUrl: 'views/main.html',
         controller: 'MainController'
       })
-      .when('/:portName', {
+      .state('detail', {
+        url: '/portfolio/{urlTitle}',
         templateUrl: 'views/port-detail.html',
         controller: 'PortfolioController'
       })
-      .when('/about', {
+      .state('about', {
+        url: '/about',
         templateUrl: 'views/about.html',
         controller: 'AboutController'
       })
-      .when('/contact', {
+      .state('contact', {
+        url: '/contact',
         templateUrl: 'views/contact.html',
         controller: 'ContactController'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
-
-      // Clean up URL's to get rid of # and keep them readable
-
-      $locationProvider.html5Mode(true);
   });

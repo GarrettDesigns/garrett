@@ -29,20 +29,20 @@
     <header>
       <section class="header-content">
         <article class="branding">
-        <a href="/"><h1 class="branding-elements"><span class="branding-elements-name">Garrett Ryan Design</span></h1></a>
+        <a ui-sref="home"><h1 class="branding-elements"><span class="branding-elements-name">Garrett Ryan Design</span></h1></a>
         </article>
         <nav class="main-nav">
           <ul class="nav-list">
             <!-- <li class="nav-list-item" class="active"><a href="/">Portfolio</a></li> -->
-            <li class="nav-list-item"><a href="/about">About</a></li>
-            <li class="nav-list-item"><a href="/contact">Contact</a></li>
+            <li class="nav-list-item"><a ui-sref="about">About</a></li>
+            <li class="nav-list-item"><a ui-sref="contact">Contact</a></li>
           </ul>
         </nav>
       </section>
     </header>
 
     <div class="main-content-container">
-      <div ng-view=""></div>
+      <div ui-view=""></div>
     </div>
 
     <footer>
@@ -76,6 +76,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

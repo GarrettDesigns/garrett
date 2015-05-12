@@ -5,7 +5,7 @@ angular.module('tmp-components',[])
 		return {
 			restrict: 'E',
 			scope: {
-				item: '='
+			item: '='
 			},
 			templateUrl: 'templates/portfolio-item.html',
 			replace: true
