@@ -26,8 +26,8 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainController'
       })
-      .state(':portName', {
-        url: '/:portName',
+      .state('detail', {
+        url: '/portfolio/{urlTitle}',
         templateUrl: 'views/port-detail.html',
         controller: 'PortfolioController'
       })
