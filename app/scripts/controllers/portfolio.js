@@ -3,8 +3,6 @@
  angular.module('garrettApp')
   .controller('PortfolioController', function($scope, $routeParams) {
 
-    this.itemIndex = $routeParams.portName;
-
     $scope.portfolio = [
   		{
         itemIndex: '0',
