@@ -8,7 +8,9 @@ angular.module('garrettApp')
         urlTitle: 'RedHawk_Casino',
         title: 'RedHawk Casino',
         image: '../images/redhawkcasino_03.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus rerum, facere. Odit suscipit saepe quas nisi dolore tenetur, repellendus numquam autem vitae ducimus, aspernatur, architecto debitis animi possimus itaque laudantium.',
+        description: 'An exciting redesign of RedHawk Casino\'s main web page. This project was done in a bid to win this client for Adage Technologies.',
+        detailImage: '../images/detailView/redhawkcasino_Lg.jpg',
+        detailDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
         show: false
       },
       {
@@ -16,7 +18,7 @@ angular.module('garrettApp')
         urlTitle: 'Groupon_10_Things',
         title: 'Groupon 10 Things',
         image: '../images/tenthingsLg.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet consectetur, sunt iste cupiditate dolor recusandae officia assumenda, non et officiis perspiciatis! Dolor officiis veritatis, sunt suscipit non ullam asperiores facilis!',
+        description: 'Designed for Groupon, Inc. as a city guide that served as a vehicle to sell deals.',
         show: false
       },
       {
@@ -24,7 +26,7 @@ angular.module('garrettApp')
         urlTitle: 'Groupon_Grand',
         title: 'Groupon Grand Central',
         image: '../images/grandcentralLg.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore corporis cupiditate ratione repellat, aut praesentium dolorem ut ipsam quo temporibus veniam aliquid ad possimus sed unde, perferendis magni velit beatae.',
+        description: 'The purpose of this design was to provide a visual context for the presentation of Editorial ideas about new site content.',
         show: false
       },
       {
@@ -32,7 +34,7 @@ angular.module('garrettApp')
         urlTitle: 'Inrule_Development',
         title: 'Inrule Development',
         image: '../images/inrule.png',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, maiores assumenda dolores omnis quisquam aut ipsum accusantium mollitia eum neque tempore ut sunt nobis nostrum maxime nesciunt odit porro quos.',
+        description: 'A site done for Adage Technologies developing the front end, using responsive design techniques, CSS preprocessing and jQuery.',
         show: false
       },
       {

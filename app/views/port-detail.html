@@ -1,5 +1,7 @@
 <div ng-controller="PortfolioDetailController">
-  <h2>{{urlTitle}}</h2>
-  <h3>hello</h3>
-  <p>{{portItem}}<p>
+  <img class="port-detail-image" src="{{portItem.detailImage}}" alt="Detail image of {{portItem.title}}">
+  <div class="portItemDetails">
+    <h1>{{portItem.title}}</h1>
+    <p class="portItemDescription">{{portItem.detailDescription}}</p>
+  </div>
 </div>

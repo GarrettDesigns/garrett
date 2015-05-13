@@ -64,6 +64,20 @@
   }
 }
 
+.port-detail {
+  &-image {
+    @include span(3 of 12);
+  }
+}
+
 .footer-content {
   @extend %container-defaults;
+}
+
+.social-icons, .copyright-info {
+  @include span(6);
+}
+
+.copyright-info {
+  @include last;
 }
