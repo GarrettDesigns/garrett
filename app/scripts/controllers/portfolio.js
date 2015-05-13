@@ -7,6 +7,7 @@
   })
   .controller('PortfolioDetailController', function (PortDetailService, $scope, $stateParams) {
     $scope.portfolio = PortDetailService;
-    $scope.portList = PortDetailService.portList();
+    $scope.portList = $scope.portfolio.portList();
+    $scope.portItem = $scope.portfolio.get();
     $scope.urlTitle = $stateParams.urlTitle;
   });

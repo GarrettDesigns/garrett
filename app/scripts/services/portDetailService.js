@@ -77,11 +77,12 @@ angular.module('garrettApp')
       }
     ];
 
-    this.get = function (urlTitle) {
-      for (var i in portfolio) {
-        if (portfolio[i].urlTitle === urlTitle) {
+    this.get = function () {
+      for (var i; i < portfolio.length; i++) {
+        if (portfolio[i] === portfolio.itemIndex) {
           portfolio.splice(i, 1);
         }
+        console.log(portfolio);
       }
     };
 
