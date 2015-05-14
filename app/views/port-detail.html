@@ -1,7 +1,13 @@
 <div ng-controller="PortfolioDetailController">
-  <img class="port-detail-image" src="{{portItem.detailImage}}" alt="Detail image of {{portItem.title}}">
+  <img class="port-detail-image" src="{{portItem.details.image}}" alt="Detail image of {{portItem.details.title}}">
   <div class="portItemDetails">
-    <h1>{{portItem.title}}</h1>
-    <p class="portItemDescription">{{portItem.detailDescription}}</p>
+    <h1 class="port-detail-title">{{portItem.details.title}}</h1>
+    <ul class="detail-images">
+      <li class="detail-image"><img src="{{portItem.details.detailViews.imageOne}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
+      <li class="detail-image"><img src="{{portItem.details.detailViews.imageTwo}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
+      <li class="detail-image"><img src="{{portItem.details.detailViews.imageThree}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
+    </ul>
+    <p class="portItemDescription">{{portItem.details.description}}</p>
+    <a href="#" class="view-detail-button primary buttons">View Large</a>
   </div>
 </div>

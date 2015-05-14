@@ -1,9 +1,9 @@
 
 <article class="port-item">
 	<div class="port-item-detail">
-		<h3>{{item.title}}</h3>
+		<h3>{{item.details.title}}</h3>
 		<p class="port-item-description">{{item.description}}</p>
-		<a ui-sref="detail({urlTitle: item.urlTitle})" class="primary buttons">View {{item.title}}</a>
+		<a ui-sref="detail({urlTitle: item.urlTitle})" class="primary buttons">View {{item.details.title}}</a>
 	</div>
 	<a href="#"><img ng-src="{{item.image}}"></a>
 </article>

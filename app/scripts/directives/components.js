@@ -5,16 +5,9 @@ angular.module('tmp-components',[])
 		return {
 			restrict: 'E',
 			scope: {
-			item: '='
+				item: '='
 			},
 			templateUrl: 'templates/portfolio-item.html',
-			replace: true
-		};
-	})
-	.directive('welcomeHeader', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'templates/welcome-header.html',
 			replace: true
 		};
 	});

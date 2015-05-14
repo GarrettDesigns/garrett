@@ -9,9 +9,5 @@
  */
 angular.module('garrettApp')
   .controller('ContactController', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    
   });

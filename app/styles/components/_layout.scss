@@ -70,6 +70,13 @@
   }
 }
 
+.detail-image {
+  @include span(2 of 8);
+  &:last-child {
+    @include last;
+  }
+}
+
 .footer-content {
   @extend %container-defaults;
 }
