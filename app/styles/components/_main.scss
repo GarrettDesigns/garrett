@@ -14,9 +14,6 @@
   padding: 20px;
   box-shadow: 1px 1px 3px rgba(3,3,3,0.1);
   margin-top: 30px;
-  @include breakpoint(max-width $lg-desktop) {
-    margin: 30px 20px 0;
-  }
 }
 
 .port-overview {
@@ -31,9 +28,6 @@
     max-width: 80%;
     margin: 20px auto 0;
   }
-  @include breakpoint(max-width $small-tablet) {
-      display: none;
-    }
   &-link {
     &:hover {
       text-decoration: underline;
@@ -51,9 +45,6 @@
 .nav-list {
   text-align: right;
   margin: 0 auto;
-  @include breakpoint(max-width $small-tablet) {
-    text-align: center;
-  }
 	&-item {
 		display: inline-block;
     margin: 0;
@@ -74,9 +65,6 @@
 }
 
 .branding {
-  @include breakpoint(max-width $small-tablet) {
-    text-align: center;
-  }
   &-elements {
     display: inline-block;
     font-weight: 300;
@@ -86,34 +74,11 @@
     &:hover {
       color: darken($pale-orange, 40%);
     }
-    @include breakpoint(max-width $small-tablet) {
-        height: 50px;
-      }
-    &-name {
-      @include breakpoint($small-tablet) {
-        margin: 20px 0;
-      }
-      @include breakpoint(max-width $small-tablet) {
-        display: none;
-      }
-    }
-  }
-}
-
-.header-content {
-  @include breakpoint(max-width $lg-desktop) {
-    margin: 0 20px;
   }
 }
 
 .portfolio {
   @include clearfix;
-}
-
-.welcome-wrapper {
-  @include breakpoint(max-width $mobile) {
-    display: none;
-  }
 }
 
 .port-image {

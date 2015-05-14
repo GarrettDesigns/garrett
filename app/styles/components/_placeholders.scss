@@ -21,6 +21,13 @@
 
 }
 
+%link-defaults {
+  color: palette(main, link-color);
+  font-family: $alt-font-family;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 %rounded-nav-defaults {
   background: palette(grayscale, x-light);
   border-radius: 5px;

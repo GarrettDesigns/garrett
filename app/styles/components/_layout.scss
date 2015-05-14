@@ -15,6 +15,15 @@
 
 .header-content {
   @extend %container-defaults;
+  @include breakpoint(max-width $lg-desktop) {
+    margin: 0 20px;
+  }
+}
+
+.main-content-container {
+  @include breakpoint(max-width $lg-desktop) {
+    margin: 30px 20px 0;
+  }
 }
 
 .branding {
@@ -26,6 +35,13 @@
   }
   @include breakpoint($mobile $small-tablet) {
     @include span(12);
+  }
+  &-elements {
+    &-name {
+      @include breakpoint($small-tablet) {
+        margin: 20px 0;
+      }
+    }
   }
 }
 
@@ -41,12 +57,24 @@
   }
 }
 
+.main-content-container {
+  @extend %container-defaults;
+}
+
 .nav-list {
   @extend %container-defaults;
 }
 
-.main-content-container {
-  @extend %container-defaults;
+.welcome-wrapper {
+  @include breakpoint(max-width $mobile) {
+    display: none;
+  }
+}
+
+.port-overview {
+  @include breakpoint(max-width $small-tablet) {
+    display: none;
+  }
 }
 
 .port-item {
@@ -68,9 +96,12 @@
   &-image {
     @include span(3 of 12);
   }
+  &-description {
+    max-width: 80%;
+  }
 }
 
-.detail-image {
+.snapshot-image {
   @include span(2 of 8);
   &:last-child {
     @include last;

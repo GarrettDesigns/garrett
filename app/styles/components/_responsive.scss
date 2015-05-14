@@ -1,0 +1,16 @@
+.branding {
+  @include breakpoint(max-width $small-tablet) {
+    text-align: center;
+  }
+  &-elements {
+    @include breakpoint(max-width $small-tablet) {
+      height: 50px;
+    }
+  }
+}
+
+.nav-list {
+  @include breakpoint(max-width $small-tablet) {
+    text-align: center;
+  }
+}

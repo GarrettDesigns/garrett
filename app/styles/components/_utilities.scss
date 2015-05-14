@@ -90,7 +90,7 @@
   box-shadow: 0px 1px 1px 0px $shadow-color;
 }
 
-@mixin link-defaults($color: null, $font-weight: null, $padding: null, $display: inline-block, $font-family: $primary-font-family) {
+@mixin nav-link-defaults($color: null, $font-weight: null, $padding: null, $display: inline-block, $font-family: $primary-font-family) {
   color: $color;
   font-weight: $font-weight;
   padding: $padding;
@@ -98,4 +98,3 @@
   text-decoration: none;
   font-family: $font-family;
 }
-

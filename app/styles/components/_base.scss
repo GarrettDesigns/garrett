@@ -30,7 +30,7 @@ h1 {
 }
 
 a {
-  @include link-defaults($color: palette(main, link-color), $font-family: $alt-font-family);
+  @extend %link-defaults;
 }
 
 footer {
