@@ -9,7 +9,7 @@
 $susy: (
   columns: 12,
   gutter: 1/4,
-  container: 1600px,
+  container: 1200px,
   global-box-sizing: border-box,
   use-custom: (rem: true)
 );
@@ -29,5 +29,3 @@ $app-background: $powder-blue;
 $headline-font-family: 'jubilat', Georgia, serif;
 $primary-font-family: 'proxima-nova-alt', 'Helvetica', Verdana, sans-serif;
 $alt-font-family: 'proxima-nova-alt', 'Helvetica', Verdana, sans-serif;
-
-

@@ -66,12 +66,14 @@
 }
 
 .welcome-wrapper {
+  @include span(12);
   @include breakpoint(max-width $mobile) {
     display: none;
   }
 }
 
 .port-overview {
+  @include span(6 last);
   @include breakpoint(max-width $small-tablet) {
     display: none;
   }
