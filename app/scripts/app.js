@@ -31,6 +31,11 @@ angular
         templateUrl: 'views/port-detail.html',
         controller: 'PortfolioController'
       })
+      .state('large-view', {
+        url: '/{urlTitle}/detail-view',
+        templateUrl: 'views/large-detail.html',
+        controller: 'PortfolioDetailController'
+      })
       .state('about', {
         url: '/about',
         templateUrl: 'views/about.html',

@@ -9,11 +9,14 @@
 // Main navigation styling
 // ========
 
-.main-content-container {
+.content-container {
   background: $white;
   padding: 20px;
   box-shadow: 1px 1px 3px rgba(3,3,3,0.1);
   margin-top: 30px;
+  &.detail-page {
+    margin-top: 20%;
+  }
 }
 
 .port-overview {
@@ -37,7 +40,7 @@
   }
 }
 
-.main-content-container {
+.content-container {
   position: relative;
 }
 
@@ -103,6 +106,9 @@
       opacity: 1;
     }
   }
+  &-title {
+    font-weight: bold;
+  }
   &-detail {
   	background: transparentize(palette(grayscale, x-dark), 0.1);
   	border: 1px solid darken(palette(main, infoHover), 10%);
@@ -124,6 +130,13 @@
   &-title {
     font-family: $headline-font-family;
   }
+}
+
+.header-image-container {
+  position: absolute;
+  top:0;
+  z-index: -1;
+  width: 100%;
 }
 
 .copyright-info {

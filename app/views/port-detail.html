@@ -1,13 +1,18 @@
 <div ng-controller="PortfolioDetailController">
+<div class="header-image-container">
   <img class="port-detail-image" src="{{portItem.details.image}}" alt="Detail image of {{portItem.details.title}}">
-  <div class="portItemDetails">
+</div>
+
+<div class="content-container detail-page">
+  <ul class="port-snapshot-images">
+    <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageOne}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
+    <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageTwo}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
+    <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageThree}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
+  </ul>
+  <div class="port-item-details">
     <h1 class="port-detail-title">{{portItem.details.title}}</h1>
-    <ul class="port-snapshot-images">
-      <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageOne}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
-      <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageTwo}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
-      <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageThree}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
-    </ul>
     <p class="port-detail-description">{{portItem.details.description}}</p>
-    <a href="#" class="view-detail-button primary buttons">View Large</a>
+    <a ui-sref="large-view({urlTitle: portItem.urlTitle})" class="view-detail-button primary buttons">View Large</a>
   </div>
+</div>
 </div>

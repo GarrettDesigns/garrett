@@ -9,7 +9,7 @@ angular.module('garrettApp')
         description: 'An exciting redesign of RedHawk Casino\'s main web page. This project was done in a bid to win this client for Adage Technologies.',
         details: {
           title: 'RedHawk Casino',
-          image: '../images/details/redhawkcasino_Lg.jpg',
+          image: '../images/headers/redhawk-header.jpg',
           detailViews: {
             imageOne: '../images/details/redhawkcasino_footer.jpg',
             imageTwo: '../images/details/redhawkcasino_footer.jpg',
@@ -85,11 +85,10 @@ angular.module('garrettApp')
       },
       {
         urlTitle: 'Groupon_Getaways',
-        title: 'Groupon Getaways',
         image: '../images/merchgetaways2.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod, obcaecati doloremque nobis. Nihil porro odit libero, temporibus unde ipsum culpa veritatis, magni voluptatibus, impedit, necessitatibus ratione nisi inventore est.',
         details: {
-          title: 'RedHawk Casino',
+          title: 'Groupon Getaways',
           image: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
             imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',

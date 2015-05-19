@@ -20,7 +20,7 @@
   }
 }
 
-.main-content-container {
+.content-container {
   @include breakpoint(max-width $lg-desktop) {
     margin: 30px 20px 0;
   }
@@ -57,7 +57,7 @@
   }
 }
 
-.main-content-container {
+.content-container {
   @extend %container-defaults;
 }
 
@@ -94,20 +94,17 @@
   }
 }
 
-.port-detail {
-  &-image {
-    @include span(3 of 12);
-  }
-  &-description {
-    max-width: 80%;
-  }
+.port-item-details {
+  @include span(6)
+}
+
+.port-snapshot-images {
+  @include span(3 of 12);
 }
 
 .snapshot-image {
-  @include span(2 of 8);
-  &:last-child {
-    @include last;
-  }
+  @include span(12);
+  margin-bottom: gutter();
 }
 
 .footer-content {
