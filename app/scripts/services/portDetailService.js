@@ -10,6 +10,7 @@ angular.module('garrettApp')
         details: {
           title: 'RedHawk Casino',
           image: '../images/headers/redhawk-header.jpg',
+          largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
             imageOne: '../images/details/redhawkcasino_footer.jpg',
             imageTwo: '../images/details/redhawkcasino_footer.jpg',
