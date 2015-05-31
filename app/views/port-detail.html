@@ -5,9 +5,7 @@
 
 <div class="content-container detail-page">
   <ul class="port-snapshot-images">
-    <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageOne}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
-    <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageTwo}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
-    <li class="snapshot-image"><img src="{{portItem.details.detailViews.imageThree}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
+    <li class="snapshot-image" ng-repeat="detailImage in portItem.details.detailViews"><img src="{{detailImage}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
   </ul>
   <div class="port-item-details">
     <h1 class="port-detail-title">{{portItem.details.title}}</h1>
