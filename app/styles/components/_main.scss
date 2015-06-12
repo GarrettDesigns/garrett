@@ -50,7 +50,7 @@
 
 .myself {
   position: absolute;
-  top:-260px;
+  top:-280px;
   left: 0;
 }
 
@@ -91,6 +91,7 @@
 
 .portfolio {
   @include clearfix;
+  z-index: 9999;
 }
 
 .port-image {

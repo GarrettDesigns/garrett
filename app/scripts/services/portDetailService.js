@@ -43,7 +43,7 @@ angular.module('garrettApp')
         description: 'The purpose of this design was to provide a visual context for the presentation of Editorial ideas about new site content.',
         details: {
           title: 'Groupon Grand Central',
-          image: '../images/headers/redhawk-header.jpg',
+          image: '../images/headers/grand-central-header.jpg',
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
             imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',
