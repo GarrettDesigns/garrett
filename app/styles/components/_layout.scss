@@ -99,14 +99,11 @@
 }
 
 .port-snapshot-images {
-  @include span(9);
+  @include span(4 of 12);
 }
 
 .snapshot-image {
-  @include span(3 of 9);
-  &:last-child {
-    @include last;
-  }
+  margin-bottom: gutter();
 }
 
 .footer-content {
