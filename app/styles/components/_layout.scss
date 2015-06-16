@@ -81,11 +81,11 @@
 
 .port-item {
   @include breakpoint(min-width $desktop) {
-    @include gallery(4);
+    @include gallery(3);
     margin-bottom: gutter();
   }
   @include breakpoint($tablet $desktop) {
-    @include gallery(6);
+    @include gallery(4);
     margin-bottom: gutter();
   }
   @include breakpoint($mobile $small-tablet) {
@@ -99,7 +99,7 @@
 }
 
 .port-snapshot-images {
-  @include span(4 of 12);
+  @include span(3 of 12);
 }
 
 .snapshot-image {

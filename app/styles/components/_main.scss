@@ -107,7 +107,7 @@
 
 .port-item {
   position: relative;
-  border: 1px solid palette(grayscale, x-light);
+  @include shadow-box($padding: 0);
   &:hover {
     .port-item-detail {
       opacity: 1;
@@ -116,12 +116,14 @@
   &-title {
     font-weight: bold;
     font-family: $alt-font-family;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2;
+  }
+  &-description {
+    font-size: .8rem;
   }
   &-detail {
   	background: transparentize(palette(grayscale, x-dark), 0.1);
-  	border: 1px solid darken(palette(main, infoHover), 10%);
   	color: $white;
   	position: absolute;
     padding: 20px;
@@ -131,11 +133,11 @@
     transition: opacity 0.3s;
     .buttons {
       position: absolute;
-      bottom: 100px;
-      margin: 0 auto;
+      bottom: 50px;
+      font-size: 0.8rem;
       width: 80%;
       max-width: 250px;
-      right: 16%;
+      right: 10%;
     }
   }
 }
@@ -150,16 +152,16 @@
 
 .tech-list {
   color: $white;
-  float: right;
+  float: left;
   &-item {
-    display: inline-block;
+    float: left;
     vertical-align: center;
     margin-left: 10px;
   }
 }
 
 .view-detail-button {
-  float: right;
+  float: left;
 }
 
 .header-image-container {
