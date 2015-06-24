@@ -65,11 +65,8 @@
 }
 
 %button-defaults {
-  border-radius: 5px;
-  padding: 10px;
   min-width: 100px;
   text-align: center;
-  font-size: 1rem;
   font-weight: bold;
   font-family: $primary-font-family;
   outline: none;
@@ -77,6 +74,18 @@
   transition: all .5s;
 }
 
+%small-button-defaults {
+  padding: 0 5px;
+  border-radius: 3px;
+  border: 1px solid $white;
+}
+
+%large-button-defaults {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  background: none;
+}
 // Define Heading styles
 
 %base-heading-styles {

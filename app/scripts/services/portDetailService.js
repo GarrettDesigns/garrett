@@ -9,17 +9,14 @@ angular.module('garrettApp')
         description: 'A site done for Adage Technologies developing the front end, using responsive design techniques, CSS preprocessing and jQuery.',
         details: {
           title: 'Inrule Development',
-          image: '../images/headers/redhawk-header.jpg',
+          image: '../images/headers/inrule-header.jpg',
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
-            imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageThree: '//placehold.it/600x600/f3f3f3/cccccc.png'
+            imageOne: 'images/details/inrule_detail.png',
+            imageTwo: 'images/details/inrule_detail2.png'
           },
-          challenge: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          approach: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          outcome: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
-        },
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+          },
         show: false
       },
       {
@@ -28,16 +25,29 @@ angular.module('garrettApp')
         description: 'Northshore Health Systems\' corporate website, partcipated in the redesign and development of the responsive framework',
         details: {
           title: 'Northshore Development',
-          image: '../images/headers/redhawk-header.jpg',
+          image: '../images/headers/northshore-header.jpg',
+          largeView: '../images/details/redhawkcasino_Lg.jpg',
+          detailViews: {
+            imageOne: 'images/details/northshore_full.jpg',
+            imageTwo: 'images/details/ns_shot.jpg'
+          },
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+        },
+        show: false
+      },
+      {
+        urlTitle: 'Community_Care_Partners',
+        image: '../images/community_care.png',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        details: {
+          title: 'Community Care Partners',
+          image: '../images/headers/community-care-header.jpg',
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
             imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageThree: '//placehold.it/600x600/f3f3f3/cccccc.png'
+            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png'
           },
-          challenge: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          approach: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          outcome: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
         },
         show: false
       },
@@ -47,16 +57,13 @@ angular.module('garrettApp')
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet debitis eligendi consequuntur maiores enim doloremque iste fugiat delectus quisquam',
         details: {
           title: 'TeamMate Redesign',
-          image: '../images/headers/redhawk-header.jpg',
+          image: '../images/headers/teammate-header.jpg',
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
             imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageThree: '//placehold.it/600x600/f3f3f3/cccccc.png'
+            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png'
           },
-          challenge: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          approach: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          outcome: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
         },
         show: false
       },
@@ -70,12 +77,9 @@ angular.module('garrettApp')
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
             imageOne: '../images/details/redhawkcasino_head.jpg',
-            imageTwo: '../images/details/redhawkcasino_middle.jpg',
-            imageThree: '../images/details/redhawkcasino_footer.jpg'
+            imageTwo: '../images/details/redhawkcasino_footer.jpg'
           },
-          challenge: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          approach: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          outcome: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
         },
         show: false
       },
@@ -89,12 +93,9 @@ angular.module('garrettApp')
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
             imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageThree: '//placehold.it/600x600/f3f3f3/cccccc.png'
+            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png'
           },
-          challenge: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          approach: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          outcome: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
         },
         show: false
       },
@@ -107,13 +108,9 @@ angular.module('garrettApp')
           image: '../images/headers/grand-central-header.jpg',
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
-            imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageThree: '//placehold.it/600x600/f3f3f3/cccccc.png'
+            imageOne: 'images/details/grandcentral_detail.jpg'
           },
-          challenge: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          approach: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          outcome: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
         },
         show: false
       },
@@ -124,16 +121,12 @@ angular.module('garrettApp')
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod, obcaecati doloremque nobis. Nihil porro odit libero, temporibus unde ipsum culpa veritatis, magni voluptatibus, impedit, necessitatibus ratione nisi inventore est.',
         details: {
           title: 'Groupon Getaways',
-          image: '../images/headers/redhawk-header.jpg',
+          image: '../images/headers/merchant-header.jpg',
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
-            imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageThree: '//placehold.it/600x600/f3f3f3/cccccc.png'
+            imageOne: 'images/details/getaways_detail.jpg'
           },
-          challenge: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          approach: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          outcome: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
         },
         show: false
       },
@@ -143,16 +136,13 @@ angular.module('garrettApp')
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus numquam dolorem quos repellat nisi sed iste. Rem unde iste quibusdam itaque. Dolorem nesciunt vero quis deserunt ea, consectetur eligendi magnam.',
         details: {
           title: 'MainStreet App',
-          image: '../images/headers/redhawk-header.jpg',
+          image: '../images/headers/mainstreet-header.jpg',
           largeView: '../images/details/redhawkcasino_Lg.jpg',
           detailViews: {
-            imageOne: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png',
-            imageThree: '//placehold.it/600x600/f3f3f3/cccccc.png'
+            imageOne: 'images/details/MS_detail.jpg',
+            imageTwo: '//placehold.it/600x600/f3f3f3/cccccc.png'
           },
-          challenge: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          approach: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.',
-          outcome: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
+          overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore quibusdam quia nulla possimus, nemo expedita officiis nihil architecto dolorem soluta assumenda totam ad odio sit, vel, sint et ratione.'
         },
         show: false
       }

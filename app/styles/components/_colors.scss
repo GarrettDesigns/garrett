@@ -24,6 +24,9 @@ $latte-foam: #F8EDD0;
 $light-gray: #EAEBEC;
 $cucumber: #C5E2CE;
 $powder-blue: #D6EEF5;
+$blue-green: #105B63;
+$mustard: #FFD34E;
+$rust: #BD4932;
 
 // Define color sets
 
@@ -40,16 +43,16 @@ $palettes: (
     xx-dark: lighten($black, 10%)
     ),
   main: (
-    infoHover: $pale-orange,
+    infoHover: $blue-green,
     callout: slategray,
-    link-color: darken($pale-orange, 40%),
+    link-color: $rust,
     nav-link-color: $powder-blue,
-    cancel: $pale-orange
+    cancel: $blue-green
     ),
   buttons: (
-    primary: $pale-orange,
+    primary: $mustard,
     secondary: $sea-green,
     cancel: $cucumber,
-    info: $pale-orange
+    info: $blue-green
     )
   );

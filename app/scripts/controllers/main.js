@@ -8,6 +8,6 @@
  * Controller of the garrettApp
  */
 angular.module('garrettApp')
-  .controller('MainController', function ($scope, $http) {
-  
+  .controller('MainController', function ($scope, $stateParams) {
+    $scope.urlTitle = $stateParams.urlTitle;
   });

@@ -15,7 +15,7 @@
   box-shadow: 1px 1px 3px rgba(3,3,3,0.1);
   margin-top: 30px;
   &.detail-page {
-    margin-top: 20%;
+    margin-top: 5%;
   }
 }
 
@@ -40,24 +40,15 @@
   }
 }
 
-.content-container {
-  position: relative;
-}
-
 .content-details-header {
-  position: absolute;
-  top: -90px;
-  width: 100%;
-}
-
-.main-nav {
-  padding: 10px;
+  max-width: 1200px;
+  margin: 5% auto 20px;
 }
 
 .myself {
   position: absolute;
-  top:-280px;
-  left: 0;
+  top:-320px;
+  left: -20px;
 }
 
 .nav-list {
@@ -68,9 +59,11 @@
     margin: 0;
     text-align: center;
     width: 20%;
+    padding: 10px 0;
+    border-bottom: 3px solid $white;
     transition: all 0.5s;
     &:hover {
-      background: $pale-orange;
+      border-bottom: 3px solid $blue-green;
     }
     &:first-child {
       margin: 0;
@@ -90,9 +83,13 @@
     margin: 15px 0 0;
     transition: all 0.5s;
     &:hover {
-      color: darken($pale-orange, 40%);
+      color: lighten($blue-green, 40%);
     }
   }
+}
+
+.welcome-wrapper {
+  position: relative;
 }
 
 .portfolio {
@@ -137,7 +134,13 @@
       font-size: 0.8rem;
       width: 80%;
       max-width: 250px;
-      right: 10%;
+      right: 25%;
+      @include breakpoint($tablet $laptop) {
+        right: 20%;
+      }
+      @include breakpoint(min-width $desktop) {
+        right: 15%;
+      }
     }
   }
 }
@@ -146,7 +149,16 @@
   &-title {
     font-family: $headline-font-family;
     color: $white;
-    float: left;
+    font-size: 3.3rem;
+    @include breakpoint(max-width $tablet) {
+      font-size: 2.5rem;
+    }
+    @include breakpoint(max-width $mobile) {
+      font-size: 2rem;
+    }
+  }
+  &-description {
+    margin-bottom: 20px;
   }
 }
 
@@ -157,11 +169,16 @@
     float: left;
     vertical-align: center;
     margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
 .view-detail-button {
   float: left;
+  margin-left: 20px;
+  color: $cucumber;
 }
 
 .header-image-container {

@@ -2,27 +2,23 @@
 <div class="header-image-container">
   <img class="port-detail-image" src="{{portItem.details.image}}" alt="Detail image of {{portItem.details.title}}">
 </div>
+<div class="content-details-header">
+  <h1 class="port-detail-title">{{portItem.details.title}}</h1>
+  <ul class="tech-list">
+    <li class="tech-list-item">Tech:</li>
+    <li class="tech-list-item"><img src="images/tools/html5.png" height="20" alt="html logo"></li>
+    <li class="tech-list-item"><img src="images/tools/sass.png" height="20" alt="sass logo"></li>
+    <li class="tech-list-item"><img src="images/tools/css3.png" height="20" alt="css logo"></li>
+  </ul>
+    <a ui-sref="large-view({urlTitle: portItem.urlTitle})" class="view-detail-button sm-primary buttons">View Large</a>
+</div>
 <div class="content-container detail-page">
-  <div class="content-details-header">
-    <h1 class="port-detail-title">{{portItem.details.title}}</h1>
-    <ul class="tech-list">
-      <li class="tech-list-item">Tech:</li>
-      <li class="tech-list-item"><img src="images/tools/html5.png" height="20" alt="html logo"></li>
-      <li class="tech-list-item"><img src="images/tools/sass.png" height="20" alt="sass logo"></li>
-      <li class="tech-list-item"><img src="images/tools/css3.png" height="20" alt="css logo"></li>
-    </ul>
-      <a ui-sref="large-view({urlTitle: portItem.urlTitle})" class="view-detail-button primary buttons">View Large</a>
-  </div>
-  <!-- <ul class="port-snapshot-images">
+  <ul class="port-snapshot-images">
     <li class="snapshot-image" ng-repeat="detailImage in portItem.details.detailViews"><img src="{{detailImage}}" alt="Detailed view of the footer of {{portItem.details.title}}"></li>
-  </ul> -->
+  </ul>
   <div class="port-item-details">
-    <h1>Challenge</h1>
-    <p class="port-detail-description">{{portItem.details.challenge}}</p>
-    <h1>Approach</h1>
-    <p class="port-detail-description">{{portItem.details.approach}}</p>
-    <h1>Outcome</h1>
-    <p class="port-detail-description">{{portItem.details.outcome}}</p>
+    <h1>Overview</h1>
+    <p class="port-detail-description">{{portItem.details.overview}}</p>
   </div>
 </div>
 </div>
