@@ -94,6 +94,10 @@
   }
 }
 
+.welcome-image {
+  @include span(6);
+}
+
 .port-item-details {
   @include span(5 of 12);
 }

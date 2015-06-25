@@ -45,11 +45,11 @@
   margin: 5% auto 20px;
 }
 
-.myself {
+/* .myself {
   position: absolute;
   top:-328px;
   left: -20px;
-}
+} */
 
 .nav-list {
   text-align: right;
@@ -90,6 +90,15 @@
 
 .welcome-wrapper {
   position: relative;
+}
+
+.welcome-image {
+  background: url('../../images/me_BW2.png') no-repeat;
+  height: 700px;
+  background-size: contain;
+  position: absolute;
+  top: -258px;
+  left: -20px;
 }
 
 .portfolio {
