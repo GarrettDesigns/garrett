@@ -1,3 +1,8 @@
-<p>This is the about view.</p>
-
-
+<div class="content-container">
+  <h1>Total Badges: {{treehouse.badges.length}}</h1>
+  {{treehouse | json}}
+  <img ng-src="{{treehouse.badges[2].icon_url}}" alt="{{treehouse.badges[2].name}}">
+  <h1>{{treehouse.badges[2].name}}</h1>
+  <img ng-src="{{treehouse.badges[3].icon_url}}" alt="{{treehouse.badges[3].name}}">
+  <h1>{{treehouse.badges[3].name}}</h1>
+</div>

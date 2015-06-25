@@ -8,6 +8,6 @@
  * Controller of the garrettApp
  */
 angular.module('garrettApp')
-  .controller('AboutController', function ($scope) {
-
+  .controller('AboutController', function ($scope, BadgeListService) {
+    
   });
