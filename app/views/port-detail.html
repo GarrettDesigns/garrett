@@ -10,7 +10,7 @@
       <li class="tech-list-item"><img src="images/tools/sass.png" height="20" alt="sass logo"></li>
       <li class="tech-list-item"><img src="images/tools/css3.png" height="20" alt="css logo"></li>
     </ul>
-      <a ui-sref="large-view({urlTitle: portItem.urlTitle})" class="view-detail-button sm-primary buttons">View Large</a>
+      <a href="{{portItem.details.siteUrl}}" ng-show="{{portItem.details.siteUrl}}" target="_blank" class="view-detail-button sm-primary buttons">View Site</a>
   </div>
   <div class="content-container detail-page">
     <ul class="port-snapshot-images">
