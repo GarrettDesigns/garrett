@@ -92,6 +92,10 @@
   position: relative;
 }
 
+.snapshot-image {
+  @include shadow-box($padding: 0);
+}
+
 .welcome-image {
   background: url('../../images/me_BW2.png') no-repeat;
   height: 700px;

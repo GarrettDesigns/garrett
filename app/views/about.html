@@ -1,8 +1,8 @@
 <div class="content-container">
-  <h1>Total Badges: {{treehouse.badges.length}}</h1>
-  {{treehouse | json}}
-  <img ng-src="{{treehouse.badges[2].icon_url}}" alt="{{treehouse.badges[2].name}}">
-  <h1>{{treehouse.badges[2].name}}</h1>
-  <img ng-src="{{treehouse.badges[3].icon_url}}" alt="{{treehouse.badges[3].name}}">
-  <h1>{{treehouse.badges[3].name}}</h1>
+  <h1>Total Courses Completed: {{treehouse.badges.length}}</h1>
+  <img ng-src="{{treehouse.badges[2].icon_url}} "height="60" width="55" alt="{{treehouse.badges[2].name}}">
+  <h3>{{treehouse.badges[2].name}}</h3>
+  <img ng-src="{{treehouse.badges[3].icon_url}} "height="60" width="55" alt="{{treehouse.badges[3].name}}">
+  <h3>{{treehouse.badges[3].name}}</h3>
+  <!-- <pre>{{treehouse | json}}</pre> -->
 </div>

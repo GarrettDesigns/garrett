@@ -16,7 +16,9 @@ angular
     'tmp-components',
     'ui.router'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $uiViewScrollProvider) {
+
+    $uiViewScrollProvider.useAnchorScroll();
 
     $urlRouterProvider.otherwise('/');
 
