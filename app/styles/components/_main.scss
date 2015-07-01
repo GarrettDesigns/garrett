@@ -14,9 +14,6 @@
   padding: 20px;
   box-shadow: 1px 1px 3px rgba(3,3,3,0.1);
   margin-top: 30px;
-  &.detail-page {
-    margin-top: 5%;
-  }
 }
 
 .port-overview {
@@ -93,7 +90,31 @@
 }
 
 .snapshot-image {
-  @include shadow-box($padding: 0);
+  border: 1px solid palette(grayscale, xx-light);
+}
+
+.badges {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  &:hover .badge-name {
+    opacity: 1;
+  }
+}
+
+.badge-name {
+  opacity: 0;
+  color: $white;
+  background: palette(grayscale, dark);
+  border-radius: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  padding: 10px;
+  z-index: 9999;
+  transition: opacity 0.5s;
 }
 
 .welcome-image {
@@ -163,6 +184,7 @@
     font-family: $headline-font-family;
     color: $white;
     font-size: 3.3rem;
+    display: inline-block;
     @include breakpoint(max-width $tablet) {
       font-size: 2.5rem;
     }
@@ -189,9 +211,9 @@
 }
 
 .view-detail-button {
-  float: left;
   margin-left: 20px;
-  color: $cucumber;
+  height: 30px;
+  padding: 10px!important;
 }
 
 .header-image-container {

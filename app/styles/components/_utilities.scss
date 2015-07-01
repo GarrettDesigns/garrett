@@ -67,17 +67,15 @@
     .#{$button} {
       @extend %large-button-defaults;
     }
-    .sm-#{$button} {
-      @extend %small-button-defaults;
-    }
-    .#{$button}, .sm-#{$button} {
+    .#{$button} {
       &:hover {
-        border: 1px solid $white;
-        color: $white;
+        border: 1px solid darken($button-color, 30%);
+        background: $button-color;
+        color: darken($button-color, 30%);
       }
       &:active {
         background: darken($button-color, 30%);
-        color: $white;
+        color: $button-color;
         transition: 0.1s;
       }
     }
