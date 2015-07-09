@@ -4,13 +4,7 @@
   </div>
   <div class="content-details-header">
     <h1 class="port-detail-title">{{portItem.details.title}}</h1>
-    <a href="{{portItem.details.siteUrl}}" ng-show="{{portItem.details.siteUrl}}" target="_blank" class="view-detail-button primary buttons">View Site</a>
-  <!--   <ul class="tech-list">
-    <li class="tech-list-item">Tech:</li>
-    <li class="tech-list-item"><img src="images/tools/html5.png" height="20" alt="html logo"></li>
-    <li class="tech-list-item"><img src="images/tools/sass.png" height="20" alt="sass logo"></li>
-    <li class="tech-list-item"><img src="images/tools/css3.png" height="20" alt="css logo"></li>
-  </ul> -->
+    <a ng-href="{{portItem.details.siteUrl}}" ng-show="portItem.details.siteUrl" target="_blank" class="view-detail-button primary buttons">View Site</a>
   </div>
   <div class="content-container detail-page">
     <ul class="port-snapshot-images">
@@ -19,6 +13,13 @@
     <div class="port-item-details">
       <h1>Overview</h1>
       <p class="port-detail-description">{{portItem.details.overview}}</p>
+      <h1>Solution</h1>
+      <p class="port-detail-solution">{{portItem.details.solution}}</p>
+      <h1>Technology</h1>
+      <ul class="tech-list">
+      <li class="tech-list-item" ng-repeat="techItem in
+       portItem.details.tech"><img src="{{techItem}}" height="50" width="50" alt="Image of technology icon"></li>
+     </ul>
     </div>
   </div>
 </div>

@@ -14,21 +14,53 @@
   padding: 20px;
   box-shadow: 1px 1px 3px rgba(3,3,3,0.1);
   margin-top: 30px;
+  clear: both;
+}
+
+.welcome-image {
+  background: url('../../images/me_BW2.png') no-repeat;
+  height: 700px;
+  background-size: contain;
+  position: absolute;
+  top: -258px;
+  left: -20px;
+  @include breakpoint($small-tablet $desktop) {
+    background: url('../../images/round-portrait.png') no-repeat;
+    position: static;
+    background-size: contain;
+    height: 250px;
+  }
+  @include breakpoint(max-width $small-tablet) {
+    background: url('../../images/round-portrait.png') no-repeat;
+    position: static;
+    background-size: contain;
+    height: 200px;
+  }
 }
 
 .port-overview {
   margin: 0 0 60px;
   font-size: 1.75rem;
+  @include breakpoint(max-width $small-tablet) {
+    text-align: center;
+    margin: 0 0 20px;
+  }
   &-title {
     font-size: 5rem;
     color: #333;
     font-family: $headline-font-family;
+    @include breakpoint(max-width $laptop) {
+      font-size: 3.5rem;
+    }
   }
   .small {
     display: block;
     font-size: 1.25rem;
     width: 90%;
     margin: 20px 0;
+    @include breakpoint(max-width $tablet) {
+      display: none;
+    }
   }
   &-link {
     &:hover {
@@ -41,12 +73,6 @@
   max-width: 1200px;
   margin: 5% auto 20px;
 }
-
-/* .myself {
-  position: absolute;
-  top:-328px;
-  left: -20px;
-} */
 
 .nav-list {
   text-align: right;
@@ -70,19 +96,6 @@
 			width: 100%;
 		}
 	}
-}
-
-.branding {
-  &-elements {
-    display: inline-block;
-    font-weight: 300;
-    padding-top: 3px;
-    margin: 15px 0 0;
-    transition: all 0.5s;
-    &:hover {
-      color: lighten($blue-green, 40%);
-    }
-  }
 }
 
 .welcome-wrapper {
@@ -117,15 +130,6 @@
   transition: opacity 0.5s;
 }
 
-.welcome-image {
-  background: url('../../images/me_BW2.png') no-repeat;
-  height: 700px;
-  background-size: contain;
-  position: absolute;
-  top: -258px;
-  left: -20px;
-}
-
 .portfolio {
   @include clearfix;
   z-index: 9999;
@@ -143,6 +147,9 @@
     .port-item-detail {
       opacity: 1;
     }
+  }
+  @include breakpoint(max-width $mobile) {
+    margin-bottom: 20px;
   }
   &-title {
     font-weight: bold;
@@ -164,11 +171,14 @@
     transition: opacity 0.3s;
     .buttons {
       position: absolute;
-      bottom: 50px;
+      bottom: 30%;
       font-size: 0.8rem;
       width: 80%;
       max-width: 250px;
       right: 25%;
+      @include breakpoint(max-width $mobile) {
+        right: 15%;
+      }
       @include breakpoint($tablet $laptop) {
         right: 20%;
       }
@@ -184,9 +194,17 @@
     font-family: $headline-font-family;
     color: $white;
     font-size: 3.3rem;
-    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: left;
     @include breakpoint(max-width $tablet) {
       font-size: 2.5rem;
+    }
+    @include breakpoint(max-width $large-mobile) {
+      font-size: 2.3rem;
+      text-align: center;
+      margin-bottom: 0;
+      width: 90%;
     }
     @include breakpoint(max-width $mobile) {
       font-size: 2rem;
@@ -195,14 +213,22 @@
   &-description {
     margin-bottom: 20px;
   }
+  &-solution {
+    margin-bottom: 20px;
+  }
+  &-image {
+    background-size: cover;
+    width: 100%;
+    @include breakpoint(max-width $large-mobile) {
+      height: 220px;
+    }
+  }
 }
 
 .tech-list {
-  color: $white;
-  float: left;
+  margin-top: 20px;
   &-item {
-    float: left;
-    vertical-align: center;
+    display: inline-block;
     margin-left: 10px;
     &:first-child {
       margin-left: 0;
@@ -211,9 +237,16 @@
 }
 
 .view-detail-button {
-  margin-left: 20px;
-  height: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+  float: left;
   padding: 10px!important;
+  @include breakpoint(max-width $large-mobile) {
+    width: 85%;
+    display: block;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .header-image-container {

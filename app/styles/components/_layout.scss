@@ -26,25 +26,6 @@
   }
 }
 
-.branding {
-  @include breakpoint(min-width $desktop) {
-    @include span(6);
-  }
-  @include breakpoint(min-width $tablet) {
-    @include span(6);
-  }
-  @include breakpoint($mobile $small-tablet) {
-    @include span(12);
-  }
-  &-elements {
-    &-name {
-      @include breakpoint($small-tablet) {
-        margin: 20px 0;
-      }
-    }
-  }
-}
-
 .main-nav {
   @include breakpoint(min-width $desktop) {
     @include span(6 last);
@@ -67,24 +48,49 @@
 
 .welcome-wrapper {
   @include span(12);
+}
+
+.welcome-image {
+  @include breakpoint(min-width $desktop) {
+    @include span(6);
+  }
+  @include breakpoint($small-tablet $desktop) {
+    @include span(3);
+    margin-left: 60px;
+  }
+  @include breakpoint($small-tablet $mobile) {
+    @include full;
+    margin-left: 30%;
+  }
   @include breakpoint(max-width $mobile) {
-    display: none;
+    @include span(8);
+    margin-left: 20%;
   }
 }
 
 .port-overview {
-  @include span(6 last);
-  @include breakpoint(max-width $small-tablet) {
-    display: none;
+  @include breakpoint(min-width $desktop) {
+    @include span(6 last);
+  }
+  @include breakpoint($small-tablet $desktop) {
+    @include span(8 last);
+    padding-left: 20px;
+  }
+  @include breakpoint($small-tablet $mobile) {
+    @include span(12);
+    .small {
+      width: 100%!important;
+    }
   }
 }
 
+
 .port-item {
-  @include breakpoint(min-width $desktop) {
+  @include breakpoint(min-width $laptop) {
     @include gallery(4);
     margin-bottom: gutter();
   }
-  @include breakpoint($tablet $desktop) {
+  @include breakpoint($small-tablet $laptop) {
     @include gallery(6);
     margin-bottom: gutter();
   }
@@ -94,16 +100,18 @@
   }
 }
 
-.welcome-image {
-  @include span(6);
-}
-
 .port-item-details {
   @include span(5 of 12);
+  @include breakpoint(max-width $small-tablet) {
+    @include span(12);
+  }
 }
 
 .port-snapshot-images {
   @include span(6 of 12);
+  @include breakpoint(max-width $small-tablet) {
+    @include span(12);
+  }
 }
 
 .snapshot-image {
